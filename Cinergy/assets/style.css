@@ -1,46 +1,120 @@
 /******TYPOGRAPHY***************************************************************/
+@font-face {
+    font-family: 'Fearce';
+    src: url('../assets/font/Fearce/fearce.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 
-/******METTO I FONT DA PHONE****/
+}
+@font-face {
+    font-family: "Oxygen";
+    src: url("../assets/font/Oxygen/Oxygen-Bold.ttf") format("truetype");
+    src: url("../assets/font/Oxygen/Oxygen-Light.ttf") format("truetype");
+    src: url("../assets/font/Oxygen/Oxygen-Regular.ttf") format("truetype");
+}
+/**MODIFICO IN REM QUANDO LI HO CALCOLATI**/
+h1{
+    font-family: "Fearce", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant-ligatures: normal;
+    font-size: 41px;
+    line-height: 1;
+    letter-spacing: 8px;
+    color: #FF8300;
+}
+h2{
+    font-family: "Fearce", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant-ligatures: normal;
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: 8px;
+    color: #FFFFFF;
+}
+h3{
+    font-family: "Fearce", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant-ligatures: normal;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 8px;
+    color: #FFFFFF;
+}
+p{
+    font-family: "Oxygen", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant-ligatures: normal;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+}
+.strong{
+    font-family: "Oxygen", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-variant-ligatures: normal;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 2.7px;
+    color: #FFFFFF;
+}
+.btn-text{
+    font-family: "Oxygen", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-variant-ligatures: normal;
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
 .navbar-copy{
     font-family: "Oxygen", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-variant-ligatures: normal;
-    font-size: 20px; /**MODIFICO IN REM QUANDO LI HO CALCOLATI**/
+    font-size: 20px;
+    line-height: 1;
     letter-spacing: 4px;
-    line-height: 25px;
     color: #FF8300;
 }
-
-.footer-txt { /**Cambio nome in quello tipografico giusto**/
+.footer-txt{ /**Cambio nome in quello tipografico giusto**/
     font-family: "Oxygen", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-variant-ligatures: normal;
-    font-size: 16px; /**MODIFICO IN REM QUANDO LI HO CALCOLATI**/
+    font-size: 16px;
+    line-height: 1;
     letter-spacing: 0;
-    line-height: 20px;
     color: #FFFFFF;
     margin: 0;
 }
 
-/***METTO I FONT DA DESKTOP DENTRO***/
+
 @media screen and (min-width: 992px) {
-    /**.navbar-copy{
-        font-family: "Oxygen", sans-serif;
+    h2{
+        font-family: "Fearce", sans-serif;
         font-style: normal;
-        font-weight: bold;
+        font-weight: normal;
         font-variant-ligatures: normal;
-        font-size: 20px;
-        letter-spacing: 4px;
-        line-height: 25px;
-        color: #FF8300;
-    }**/
+        font-size: 30px;
+        letter-spacing: 8px;
+        color: #FFFFFF;
+    }
 }
 
 
 
 /*****NAVBAR*******************************************************************/
+.navbar{
+    padding: 0;
+}
 .bg-custom-grey{
     background-color: #1D1A18;
 }
@@ -69,12 +143,226 @@
     opacity: 1;
 }
 
-
 @media screen and (min-width: 992px) {
     /**.link-active{
         border-bottom: 5px solid #FF8300;
     }**/
 }
+
+/*****CONTENT*******************************************************************/
+.event-body {
+    background-color: #070400;
+    background-image:
+    url("../assets/img/Background/bg-small-right.png"),
+    url("../assets/img/Background/bg-small-left.png"),
+    url("../assets/img/Background/bg-small-right.png"),
+    url("../assets/img/Background/bg-small-left.png"),
+    url("../assets/img/Background/bg-small-right.png");
+    background-size:
+    358px 773px,
+    338px 773px,
+    358px 773px,
+    338px 773px,
+    358px 773px;
+    background-position:
+    right 399px,
+    left 1251px,
+    right 2103px,
+    left 2955px,
+    right 3807px;
+    background-repeat: no-repeat;
+}
+.event-detail-body {
+    background-color: #070400;
+    background-image:
+    url("../assets/img/Background/bg-small-right.png"),
+    url("../assets/img/Background/bg-small-left.png");
+    background-size:
+    358px 773px,
+    338px 773px;
+    background-position:
+    right 1885px,
+    left 2787px;
+    background-repeat: no-repeat;
+}
+.page-title{
+    margin-top: 4rem;
+    margin-bottom: 8.75rem;
+    text-align: center;
+}
+.page-title h1 {
+    margin-bottom: 2.938rem;
+}
+.page-title h2 {
+    margin: 0;
+}
+.details-page-title{
+    margin-top: 2.563rem;
+    margin-bottom: 0.188rem;
+}
+.img-fluid{
+    width: 100%;
+    max-height: 593px;
+    object-fit: cover;
+    object-position: 25% 25%;
+}
+.btn-small{
+    border-radius: 25.86px;
+    margin: 2.563rem 0 0 0.75rem;
+}
+
+
+@media screen and (min-width: 992px) {
+    .event-body {
+        background-image:
+        url("../assets/img/Background/bg-large-right.png"),
+        url("../assets/img/Background/bg-large-left.png");
+        background-size:
+        654px 1215px,
+        662px 1215px;
+        background-position:
+        right 512px,
+        left 2072px;
+    }
+    .event-detail-body {
+        background-color: #070400;
+        background-image:
+                url("../assets/img/Background/bg-details.png");
+        background-size:
+                914px 988px;
+        background-position:
+                right 1307px;
+        background-repeat: no-repeat;
+    }
+    .page-title{
+        margin-top: 6.813rem;
+        margin-bottom: 11.188rem;
+    }
+    .details-page-title {
+        margin-top: 2.188rem;
+        margin-bottom: 0;
+    }
+}
+
+
+/*****CARD*******************************************************************/
+.card{
+    background-color: rgba(255, 255, 255, .08);
+    backdrop-filter: blur(15px);
+    border: none;
+    border-radius: 30px!important;
+}
+.card-img{
+    padding: 1.75rem 1.75rem 3.313rem 1.75rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.details-card-img{
+    padding: 2.5rem 4.188rem 2.813rem 4.188rem;
+}
+.map {
+    height: 23.75rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px!important;
+}
+.mb-custom{
+    margin-bottom: 3.938rem;
+}
+.rounded{
+    border-radius: 15px!important;
+}
+.card-body{
+    padding: 0 1.75rem 2.813rem 1.75rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-title{
+    margin: 0 0 2.563rem 0;
+}
+.details-card-title{
+    margin-top: 2.813rem;
+    margin-bottom: 1.875rem;
+    color: #FF8300;
+}
+
+.card-text{
+    margin-bottom: 3.5rem;
+}
+.details-card-text{
+    text-align: start;
+}
+.btn-card {
+    width: 14.938rem;
+    padding: 14px 0 14px 0;
+    border-radius: 20px;
+    text-align: center;
+}
+.btn-color{
+    background-color: transparent;
+    border: 3.5px solid #FF8300;
+    box-shadow: 0 0 15px #FF8300;
+}
+.btn:hover{
+
+}
+.btn:visited{
+
+}
+#marker {
+    background-image: url("../assets/img/marker.png");
+    background-size: contain;
+    width: 25px;
+    height: 45px;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 992px) {
+    .card-img {
+        padding: 1.5rem;
+        width: 80%;
+        height: 80%;
+        display: block;
+    }
+    .card-body {
+        padding: 1.5rem 2.25rem 1.5rem 0;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .card-title {
+        padding: 3.438rem 0 0 0;
+        margin: 0;
+        text-align: start;
+    }
+    .details-card-title{
+        margin: 0.5rem 0 0 3.125rem;
+    }
+    .card-text{
+        width: 80%;
+        margin-top: 1rem;
+        text-align: start;
+    }
+    .details-card-text{
+        margin-left: 3.125rem;
+    }
+    .btn{
+        align-self: end;
+        justify-self: end;
+    }
+    .details-btn{
+        margin-left: 3.125rem;
+        align-self: start;
+    }
+}
+
+
+
 
 /*****FOOTER*******************************************************************/
 #Footer{
