@@ -1,0 +1,98 @@
+/******TYPOGRAPHY***************************************************************/
+
+/******METTO I FONT DA PHONE****/
+.navbar-copy{
+    font-family: "Oxygen", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-variant-ligatures: normal;
+    font-size: 20px; /**MODIFICO IN REM QUANDO LI HO CALCOLATI**/
+    letter-spacing: 4px;
+    line-height: 25px;
+    color: #FF8300;
+}
+
+.footer-txt { /**Cambio nome in quello tipografico giusto**/
+    font-family: "Oxygen", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant-ligatures: normal;
+    font-size: 16px; /**MODIFICO IN REM QUANDO LI HO CALCOLATI**/
+    letter-spacing: 0;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+/***METTO I FONT DA DESKTOP DENTRO***/
+@media screen and (min-width: 992px) {
+    /**.navbar-copy{
+        font-family: "Oxygen", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-variant-ligatures: normal;
+        font-size: 20px;
+        letter-spacing: 4px;
+        line-height: 25px;
+        color: #FF8300;
+    }**/
+}
+
+
+
+/*****NAVBAR*******************************************************************/
+.bg-custom-grey{
+    background-color: #1D1A18;
+}
+.navbar-toggler-icon{
+    background-image: url("../assets/img/Navbar-button.png");
+}
+.nav-link:hover{
+    color: #FF8300;
+}
+.link-active{
+    border-bottom: 5px solid #FF8300;
+}
+.navbar-list-item{
+    text-align: end;
+}
+#offcanvasNavbar{
+    background-color: #1D1A18;
+
+}
+.offcanvas-header{
+    background: #FF8300;
+}
+.btn-close{
+    width: 100%;
+    background: url("../assets/img/Close.png") center/1em auto no-repeat;
+    opacity: 1;
+}
+
+
+@media screen and (min-width: 992px) {
+    /**.link-active{
+        border-bottom: 5px solid #FF8300;
+    }**/
+}
+
+/*****FOOTER*******************************************************************/
+#Footer{
+    height: 240px;
+    padding-bottom: 25px;
+}
+#Footer-spacing{
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+
+@media screen and (min-width: 992px) {
+    #Footer{
+        height: 325px;
+    }
+    #Footer-spacing{
+        margin-top: 24px;
+        margin-bottom: 42px;
+    }
+}
